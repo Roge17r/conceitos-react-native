@@ -40,7 +40,8 @@ export default function App() {
           <Text style={styles.repository}>{repository.title}</Text>
 
           <View  style={styles.techsContainer}>
-            {repository.techs.map(tech =><Text key={Array(tech)} style={styles.tech}>
+            {repository.techs.map(tech =>
+            <Text key={Array(tech)} style={styles.tech}>
               {tech}
             </Text>)}
            
@@ -118,5 +119,6 @@ const styles = StyleSheet.create({
     color: "#fff",
     backgroundColor: "#7159c1",
     padding: 15,
+    textAlign:'center',
   },
 });
